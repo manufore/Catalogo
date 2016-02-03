@@ -1,0 +1,616 @@
+\documentclass[letterpaper, spanish]{article}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage[bottom]{footmisc}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[lmargin=2cm,rmargin=2cm,top=2cm,bottom=2cm, headheight=110pt]{geometry}
+
+\title{Catálogo de Valores genéticos \textit{Pinus radiata}}
+\author{Cooperativa de Mejoramiento Genético Forestal}
+\date{}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+\usepackage{array}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\heavyrulewidth = 2pt
+\lightrulewidth = 0.1pt
+\begin{document}
+\begin{titlepage}
+\begin{center}
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+\includegraphics[width=0.25\textwidth]{C:/Users/manufore/Documents/Catalogo/Figures/logo.jpg}~\\[1cm]
+\textsc{\LARGE Cooperativa de Mejoramiento Genético Forestal}\\[1.5cm]
+\textsc{\Large Pinus radiata}\\[0.5cm]
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Catálogo de Valores Genéticos \\[0.4cm] }
+\HRule \\[1.5cm]
+% Author and supervisor
+\noindent
+\vfill
+\includegraphics[width=1.0\textwidth]{C:/Users/manufore/Documents/Catalogo/Figures/socios.png}~\\[1cm]
+% Bottom of the page
+{\Large Valdivia 2014}
+\end{center}
+\end{titlepage}
+
+\begin{titlepage}
+\begin{center}
+% Upper part of the page. The '~' is needed because \\
+% only works if a paragraph has started.
+\includegraphics[width=0.25\textwidth]{C:/Users/manufore/Documents/Catalogo/Figures/logo_bn.jpg}~\\[1cm]
+\textsc{\LARGE Cooperativa de Mejoramiento Genético Forestal}\\[1.5cm]
+\textsc{\Large Pinus radiata}\\[0.5cm]
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Catálogo de Valores Genéticos \\[0.4cm] }
+\HRule \\[1.5cm]
+% Author and supervisor
+\noindent
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft}\large
+\emph{Autores:}\\
+Manuel \textsc{Rocha}\\
+Gastón \textsc{Vergara}\\
+Erika \textsc{Pérez}
+\end{flushleft}
+\end{minipage}%
+\begin{minipage}{0.4\textwidth}
+\begin{flushright}\large
+\emph{Director:}\\
+Dr.~Fernando \textsc{Droppelmann}
+\end{flushright}
+\end{minipage}
+\vfill
+\includegraphics[width=1.0\textwidth]{C:/Users/manufore/Documents/Catalogo/Figures/socios_bn.png}~\\[1cm]
+% Bottom of the page
+{\Large Valdivia 2014}
+\end{center}
+\end{titlepage}
+
+%\maketitle
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\large
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\rightmark}
+\fancyfoot[L]{Catálogo de Valores Genéticos}
+\fancyfoot[R]{CMGF 2014}
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\section{Introducción}
+Uno de los principales objetivos de la Cooperativa es generar anualmente un Catálogo de
+Valores Genéticos del material que constituye las poblaciones base de la Cooperativa. La
+valorización genética se obtiene del análisis de la información generada en los ensayos de
+progenie de polinización abierta (EPPA) y de polinización controlada (EPPC). Estos
+ensayos han sido establecidos por las empresas e instituciones miembros en las diferentes
+zonas de crecimiento definidas por la Cooperativa. La información contenida en el catálogo es la base para las decisiones que anualmente se están tomando en los programas de mejoramiento genético. Este documento mantiene una estructura de presentación similar a la del Catálogo 2012. En
+la primera parte se entregan antecedentes metodológicos y a continuación, en la segunda
+parte, las tablas de resultados para cada zona.
+\par
+En la presente entrega, se incluyen los resultados de la actualización de los rankings correspondiente a las Zonas de: \textbf{Molina, Constitución, Santa Bárbara, Nacimiento y Valdivia}. Adicionalmente, se presentan los rankings del \textbf{Proyecto Fondef D04I-1263} : Aumento de la Productividad del Secano a través del Desarrollo de Razas Genéticas, que son el resultado del análisis del conjunto de ensayos con material proveniente de la Población Base  así como también de material obtenido mediante Selecciones de Secano.
+\par
+Se han mejorado los procedimientos estadísticos y de captura de datos. Se ha incluido un algoritmo de análisis de vecindad móvil para mejorar los resultados en la estimación de los parámetros y valores genéticos. Este procedimiento es una mejora al procedimiento tradicional de cálculo de desvíos por bloques y ha sido especialmente útil en aquellos ensayos con una alta heterogeneidad y parches de crecimiento notorios. Adicionalmente, basado en el mismo principio de análisis de vecindad, se ha incluido un algoritmo para evaluar la sobrevivencia de familias/clones (Índice de sobrevivencia). Durante la presente temporada se ha concluido la programación del capturador de datos que permite la evaluación completa de los ensayos tanto para \textit{Pinus radiata} como \textit{Eucalyptus globulus} de acuerdo a la Pauta técnica de la CMGF y está disponible para su utilización operativa por parte de los socios, representando una importante herramienta para el mejoramiento de la adquisición de datos en terreno.
+\par
+El catálogo 2014 de \textit{Pinus radiata} es el resultado de la evaluación de 118 ensayos de
+progenie, de los cuales \textbf{18} corresponden a evaluaciones del último año.
+Como se puede observar en las tablas, estas están ordenadas según la variable de valor
+genético para volumen, lo cual significa que para ver la posición relativa de sus demás
+atributos de calidad se debe revisar el percentil en la columna correspondiente.
+El presente Catálogo se encuentra disponible en el sitio web de la Cooperativa \emph{(www.cmgf.cl)}, en donde también se puede descargar la última versión del software \emph{SISPLUS} el cual contiene la información detallada del material de las empresas socias. La información genética aquí contenida permite a los Socios tomar decisiones en los
+siguientes ámbitos:
+\begin{itemize}
+\item Selección de material a utilizar en poblaciones base, elite y producción.
+\item Uso zonificado del material genético (*).
+\item Definición de estrategias de mejoramiento.
+\item Intercambio de material entre programas (*). 
+\end{itemize}
+\let\thefootnote\relax\footnotetext{* \textit{Al considerar resultados de distinta zona se debe tener en cuenta las limitantes de conectividad entre ensayos, señalado en el punto 3.2.}}
+
+\pagebreak
+
+\section{Asociados y Ensayos Evaluados}
+\subsection{Empresas y/o organizaciones propietarias de los ensayos.}
+
+<<results='asis', echo=FALSE, message=FALSE>>=
+if (Sys.getenv("JAVA_HOME")!="")
+  Sys.setenv(JAVA_HOME="")
+library(rJava)
+library(xtable)
+library(xlsxjars)
+library(xlsx)
+library(Hmisc)
+@
+
+%%% TABLA DE EMPRESAS ASOCIADAS A CMGF 2014 %%%
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla_a <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Tabla_a.xlsx", encoding="UTF-8", 1)
+latex(tabla_a, file = "", title = "",
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  longtable = TRUE,
+  colheads = c('Código', 'Empresa - Organización'),
+  rowname="",
+  row.valign = c("centre"),
+  col.just=c("c","c")
+  )
+@
+
+\subsection{Ensayos utilizados}
+\par
+A continuación se presentan los ensayos utilizados para las distintas etapas de la generación
+del catálogo. Se indica para cada caso si el ensayo se utilizó para estimar parámetros
+genéticos (heredabilidad, dominancia, correlaciones genéticas) y/o valores genéticos.
+\par
+Lista de ensayos utilizados por Empresa - \textit{Pinus radiata}
+
+%%% TABLA DE ENSAYOS BAJO ANÁLISIS 2014 Y EDAD %%%
+<<results='hide', echo=FALSE, message=FALSE>>=
+tabla_b <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Tabla_b.xlsx", encoding="UTF-8", 1)
+latex(tabla_b, file = "", title = "", cgroup = c('', 'Edad'),
+  n.cgroup=c(3,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,0,0),
+  longtable = TRUE,
+  colheads = c('Tipo', 'Zona', 'Ensayo', 'Catálogo 2013','Catálogo 2014'),
+  rowname="",
+  row.valign = c("centre"),
+  col.just=c("c","c","c","c","c")
+  )
+@
+\normalsize
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla_bn <- read.xlsx("C:/Users/manufore/Documents/Catalogo/ensazona.xlsx", encoding="UTF-8", 1)
+latex(tabla_bn, file = "", title = "",
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,0,0,1,1,0),
+  longtable = TRUE,
+  colheads = c('Zona', 'Ensayo', 'Tipo', 'Edad','Nota', 'Sobrevivencia', 'Actualización'),
+  rowname="",
+  row.valign = c("centre"),
+  col.just=c("@{}c","@{}c","@{}c","@{}c","@{}c","@{}c","@{}c")
+  )
+@
+\large
+
+\section{Metodología}
+\par
+Las fases de calificación de ensayos y definición de zonas de crecimiento fueron descritas en el informe Catálogo de Ensayos Genéticos 1999. Para mayor facilidad de consulta, antes de las tablas de resultados, se incluye una copia reducida del plano que contiene las zonas de crecimiento.
+
+\subsection{Zonas de crecimiento}
+\par
+El criterio de clasificación de zonas ha permanecido inalterado desde el año 2002 a la fecha. Tan sólo debe considerarse que cuando se trabaja en zonas amplias como la de CONSTITUCIÓN, es conveniente  que cada usuario a la hora del utilizar el material genético favorezca la afinidad sitio de plantación - sitios de mayor representación de la familia (ej. material de CONAF VIII plantar preferentemente en el área sur de la zona Constitución). 
+
+\subsection{Situación de conectividad}
+\par
+Una condición básica para que los resultados de los análisis genéticos sean interpretables es que los ensayos analizados estén conectados. La conectividad estadística de los ensayos se logra teniendo un mínimo número de familias en común entre ellos. Se estableció un criterio de conectividad mínima de 10 familias para cálculos de Parámetros Genéticos y 15 familias para cálculos de Valores Genéticos (generación de rankings), que es conservador y generalmente aceptado. Como consecuencia de esta exigencia, se generan tablas separadas para cada grupo de ensayos conectados. Básicamente, los resultados de grupos de ensayos no conectados no son comparables entre sí, lo que significa que la mejor familia de una tabla puede ser genéticamente muy distinta de la mejor familia de otra tabla.
+
+
+\subsection{Análisis de la información}
+\par
+Se analizaron las características de Volumen, Rectitud, Calidad de Rama y Bifurcación, todas ellas en forma normalizada. La normalización corresponde a un desvío que se obtiene dividiendo el valor observado por la desviación estándar del bloque.
+\par
+Para el cálculo de volumen se utilizó la siguiente función:
+\par
+\begin{equation}
+Volumen (m^3 scc) = 0,00003333 \times (DAP^2 \times ALTURA)
+\end{equation}
+\par
+Donde DAP es el diámetro a la altura del pecho (cm) y ALTURA es la altura total (m).
+\par
+RECTITUD: Es medida de 1 a 6; donde “1” corresponde a  árboles con mala rectitud y “6” a  árboles con buena rectitud. La rectitud se califica sólo en los primeros 2/3 de la altura total del árbol. No se consideran las curvaturas basales, normalmente producto de inclinación inicial por viento. Se debe aislar el efecto de daño por polilla, toda vez que exista clara evidencia de dicho agente. Siguiendo la lógica para la interpretación de las tablas de resultado, un valor positivo significa mejor rectitud y uno negativo de peor rectitud que el promedio de la población analizada. 
+\par
+CALIDAD DE RAMAS: Es medida de 1 a 6; donde “1” corresponde a  árboles con ramas de mala calidad y “6” a  árboles con ramas buenas. La evaluación se realiza combinando diámetro de rama, ángulo de inserción, distribución y número de verticilos en el fuste. 
+\par
+Siguiendo la lógica para la interpretación de las tablas de resultado, un valor positivo significa mejor calidad de ramas y uno negativo de peor calidad que el promedio de la población analizada. 
+\par
+BIFURCACIÓN: Es un valor que en los ensayos se califica de 0 a 1, siendo 0 un árbol normal y 1 un árbol bifurcado. Para efectos del análisis, internamente en los cálculos el valor 0 se convirtió en 2, lo cual permite seguir con la lógica de que los valores genéticos positivos son indicativos de mejor calificación. La bifurcación normalizada se obtiene dividiendo  el valor del árbol por la desviación típica correspondiente al bloque del ensayo. 
+\par
+Los factores de variación considerados son el sitio-bloque (efecto fijo), el valor genético aditivo, el valor genético de dominancia y el error o variación netamente individual. (Los valores aditivos se expresan en el comportamiento general de las familias mientras que los valores de dominancia se expresan en los resultados específicos de cada cruzamiento en particular). Se toma en cuenta parentesco aditivo entre hermanos completos (0,5)  y medio hermanos (0.33). En este último caso se usó el parentesco corregido, lo cual es  generalmente aceptado para semilla de huerto.  Entre hermanos completos se toma en cuenta también el parentesco de dominancia (0,25).
+\par
+Como se viene realizando a partir del año 2010, la heredabilidad utilizada corresponde al valor estimado para cada ensayo. En cuanto a las correlaciones genéticas, se construyó una matriz de correlaciones en que participan todas las combinaciones de los ensayos que están debidamente conectados, usando en el análisis cada una de las parejas de ensayos con su valor de correlación estimado. En la zona Los Sauces hubo varios casos en que la correlación entre parejas de ensayos fue cercana a 1, en todos esos casos se fijó un límite de 0,85 como máximo. 
+\par 
+Para el caso de los ensayos EPPC se utilizó el componente genético total (heredabilidad y dominancia) específico de cada ensayo, pero realizando un ajuste según la proporción que en promedio tienen estos dos componentes en el conjunto de ensayos o zonas de análisis. Para ello se siguió el siguiente procedimiento: 
+\begin{itemize} 
+\item Estimación de heredabilidad y dominancia de cada ensayo. 
+\item Determinación de proporción de ambos componentes a partir de todos los ensayos. 
+\item Determinación del promedio de cada componente a partir de todos los ensayos. 
+\item En cada ensayo se ajusta una nueva heredabilidad y dominancia considerando las proporciones promedio de la zona o grupo de ensayos en análisis. 
+\end{itemize}
+En la tabla siguiente se presenta un ejemplo del cálculo de los parámetros estimados: 
+
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla_c <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Tabla_c.xlsx", encoding="UTF-8", 1)
+latex(tabla_c, file = "", title = "",
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,3,3,3,3,3),
+  longtable = TRUE,
+  colheads = c('Ensayo', "$h^2$", '$d^2$', 'Total','$h^2$ ajustada','$d^2$ ajustada'),
+  rowname="",
+  col.just=c("l","c","c","c","c","c")
+  )
+@
+
+Normalmente en todos los ensayos existen algunos árboles que no son válidos para efectos de análisis, debido a que están absolutamente fuera de la normalidad. Como ejemplo de ello son árboles que están completamente inclinados por un problema radicular, también los hay quebrados a baja altura y otros deformados por diversas razones.  
+\par
+Dentro de este proceso de eliminación de árboles, una vez detectados, es necesario observar si corresponde a un problema al azar o se concentra sistemáticamente en familias específicas. Si es al azar simplemente se elimina el dato, mientras que si es familiar el tratamiento es diferente y este será un punto importante de considerar para el uso de la familia en forma operacional. Para tranquilidad se puede señalar que en todos los ensayos revisados todavía no se encuentran problemas de esta índole a nivel familiar. 
+\par
+Antiguamente se eliminaba todo aquel árbol que aparecía como quebrado en las observaciones. Sin embargo se ha visto que no es tan simple como eliminar estos en forma automática, debiendo considerarse para la decisión la magnitud de la quebradura con relación al tamaño total del árbol. 
+\par
+A partir del Catálogo 2010 se ha confeccionado un protocolo de depuración de datos considerando como árbol no analizable a los que cumplen con algunos de los siguientes criterios para las variables altura y diámetro: 
+\begin{itemize}
+\item Menor o igual a 4 desviaciones estándar o,  mayor o igual a 5 desviaciones estándar, respecto a la media del bloque.
+\item Relación DAP/ALTURA menor o igual a 4 desviaciones estándar o,  mayor o igual a 5 desviaciones estándar, respecto a la media del bloque.
+\item Relación DAP/ALTURA menor que 0,5 o mayor que 3.
+\end{itemize}
+Tampoco se incluyen en el análisis:
+\begin{itemize}
+\item Todos los árboles muertos, rellenos o anormales
+\item Si en un bloque, el número de árboles bifurcados y/o quebrados es menor o igual a 5.
+\item Si el número de árboles finales por familia es menor que 8.
+\item Árboles con volumen menor al 5\%\  del volumen promedio del bloque.
+\end{itemize}
+\pagebreak
+\section{Resutados}
+
+El presente documento contiene tablas de valores genéticos aditivos y totales para familias a nivel de zonas de crecimiento. Las evaluaciones específicas a nivel de ensayo también se han calculado pero por razones prácticas solamente se entregarán en medio magnético. Se dispone también de tablas de valores genéticos para árboles individuales en P. radiata, que están siendo usadas como elemento de trabajo de terreno para el programa de selección de segunda generación.
+\subsection{Interpretación de las tablas}
+ 
+El catálogo  presenta tablas de resultados de dos tipos: Valores Genéticos Aditivos (VGA) y Valores Genéticos Totales (VGT). 
+\par
+Los valores genéticos totales representan el valor de una familia, ya sea de semilla de huerto de polinización abierta o semilla de polinización controlada.  Este valor permite escoger el material a propagar operacionalmente.  
+\par
+Los valores aditivos representan  el valor de cada padre y se pueden sumar para predecir el valor de un cruzamiento entre dos padres. Por lo tanto sirven para seleccionar familias prometedoras para cruzamientos controlados.
+
+\subsection{Contenido de las tablas} 
+ 
+Cada tabla corresponde a una zona. En la mayoría de los casos se incluye una tabla de valores genéticos aditivos (VGA) y otra de valores genéticos totales VGT).  
+\par
+En el encabezado se indica:
+\begin{itemize}
+\item Especie.
+\item Zona a la que pertenecen los ensayos.
+\item Empresas propietarias de los ensayos que se incluyen.
+\end{itemize}
+En el cuerpo de las tablas de Valor Genético Aditivo se incluye:
+\begin{itemize}
+\item Madre. Se identifica mediante su código.
+\item Valor genético para volumen.
+\item Rank = ranking que señala su posición absoluta con relación al valor genético que tiene en volumen.
+\item Percentil = ubicación en términos porcentuales dentro de la tabla, siempre referido a volumen. Este valor permite comparar en forma relativa dos ranking genéticos que tengan distinto números de familias. (ej. Se desea comparar el ranking de una lista (A) de 50 familias con otra lista (B) de 100 familias, en este caso el percentil 50 de ambas listas corresponderá al ranking 25 de la lista (A) y ranking 50 de la lista (B). Es decir en este caso, el ranking 25 no es mejor que el 50). No olvidar que aunque el percentil trata de hacer comparables los rankings provenientes de análisis desconectados, esto es solo en forma relativa pero no absoluta ya que el promedio genético de las poblaciones puede ser diferente.
+\item Número de árboles = es el número de hijos de la familia, sean estos medios hermanos o hermanos completos.
+\item Rectitud = valor genético para rectitud. = percentil de rectitud
+\item Cal. de ramas = valor genético para calidad de ramas. = percentil para calidad de ramas 
+\item Bifurcación = valor genético para bifurcación. = percentil para calidad de ramas 
+\end{itemize}
+En el cuerpo de las tablas de Valor Genético Total se incluye además el Padre y el número de árboles del cruzamiento específico, dejando el campo “Número de árboles” para el total de árboles en los que está presente alguno de los dos padres involucrados. 
+
+\subsection{Uso del Catálogo} 
+
+A modo de conclusión y resumen de lo explicado, se puede recomendar lo siguiente: 
+\begin{itemize} 
+\item Identifique su patrimonio con las zonas que mejor lo representan. Si el material que le interesa no ha sido probado en la zona, puede considerar zonas afines, pero con precaución. 
+\item Para la selección de material a utilizar en producción, utilice tabla VGT.  
+\item La tabla VGA solamente se debe usar para buscar material que se desea usar en cruzamientos nuevos, para crear una próxima generación. 
+\item Si el número de datos (ND) es reducido, es probable que el valor genético sufra cambios mayores a futuro, pero esto no significa que no se deba usar este material, ya que en el largo plazo, la selección por valor genético es la que ofrece la mayor ganancia (el riesgo ya ha sido tomado en cuenta en la predicción). 
+\item Las variables Rectitud, Calidad de rama y Bifurcación son criterios complementarios a tomar en cuenta, pero solo en forma secundaria ya que son características que presentan una variación genética reducida.
+\end{itemize}
+
+\pagebreak
+\section{Mapa de Zonas de Crecimiento para \textit{Pinus radiata}}
+\begin{center}
+\includegraphics[width=0.96\textwidth]{C:/Users/manufore/Documents/Catalogo/Figures/mapapino.png}~
+\end{center}
+\pagebreak
+\newgeometry{lmargin=1cm,rmargin=1cm,top=2cm,bottom=2cm, headheight=110pt}
+\normalsize
+\section{Rankings \textit{Pinus radiata}}
+\fancyhfoffset[L]{0pt}
+\fancyhfoffset[R]{0pt}
+%%%%% Tablas VGAy VGT POR ZONA DE CRECIMIENTO %%%%%
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Molina}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla1 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla1.xlsx", 1)
+latex(tabla1, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Constitución}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla3 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla3.xlsx", 1)
+latex(tabla3, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Totales - Zona Constitución}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla4 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla4.xlsx", 1)
+latex(tabla4, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(2,1,4,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,4,0,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'Padre', 'VGT', 'Rank', 'Pctl','N', 'NC','VGT','Pctl','VGT','Pctl','VGT','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}", "@{}c@{}", "@{}c@{}","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Constitución Internudos}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla5 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla5.xlsx", 1)
+latex(tabla5, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Totales - Zona Constitución Internudos}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla6 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla6.xlsx", 1)
+latex(tabla6, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(2,1,4,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,4,0,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'Padre', 'VGT', 'Rank', 'Pctl','N', 'NC','VGT','Pctl','VGT','Pctl','VGT','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}", "@{}c@{}", "@{}c@{}","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Cauquenes}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla7 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla7.xlsx", 1)
+latex(tabla7, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Santa Bárbara}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla9 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla9.xlsx", 1)
+latex(tabla9, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Totales - Zona Santa Bárbara}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla10 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla10.xlsx", 1)
+latex(tabla10, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(2,1,4,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,4,0,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'Padre', 'VGT', 'Rank', 'Pctl','N', 'NC','VGT','Pctl','VGT','Pctl','VGT','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}", "@{}c@{}", "@{}c@{}","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Arauco}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla11 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla11.xlsx", 1)
+latex(tabla11, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Totales - Zona Arauco}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla12 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla12.xlsx", 1)
+latex(tabla12, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(2,1,4,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,4,0,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'Padre', 'VGT', 'Rank', 'Pctl','N', 'NC','VGT','Pctl','VGT','Pctl','VGT','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}", "@{}c@{}", "@{}c@{}","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Nacimiento}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla13 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla13.xlsx", 1)
+latex(tabla13, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Totales - Zona Nacimiento}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla14 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla14.xlsx", 1)
+latex(tabla14, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(2,1,4,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,4,0,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'Padre', 'VGT', 'Rank', 'Pctl','N', 'NC','VGT','Pctl','VGT','Pctl','VGT','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}", "@{}c@{}", "@{}c@{}","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Cholguán}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla15 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla15.xlsx", 1)
+latex(tabla15, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Totales - Zona Cholguán}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla16 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla16.xlsx", 1)
+latex(tabla16, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(2,1,4,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,4,0,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'Padre', 'VGT', 'Rank', 'Pctl','N', 'NC','VGT','Pctl','VGT','Pctl','VGT','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}", "@{}c@{}", "@{}c@{}","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Zona Valdivia}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla17 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla17.xlsx", 1)
+latex(tabla17, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(1,1,3,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Totales - Zona Valdivia}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla18 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla18.xlsx", 1)
+latex(tabla18, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación'),
+  n.cgroup=c(2,1,4,2,2,2),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,0,4,0,0,0,0,3,0,3,0,3,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'Padre', 'VGT', 'Rank', 'Pctl','N', 'NC','VGT','Pctl','VGT','Pctl','VGT','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}", "@{}c@{}", "@{}c@{}","@{}c","@{}c","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r","@{}r")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Secano Población Base}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla19 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla19.xlsx", 1)
+latex(tabla19, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación','I. Svive.'),
+  n.cgroup=c(1,1,3,2,2,2,1),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r","@{}c")
+  )
+@
+\pagebreak
+\subsection{Tabla de Valores Genéticos Aditivos - Secano Selecciones}
+<<results='asis', echo=FALSE, message=FALSE>>=
+tabla20 <- read.xlsx("C:/Users/manufore/Documents/Catalogo/Catalogo Valores Genéticos 2014/PINO/Tabla20.xlsx", 1)
+latex(tabla20, file = "", title = "", cgroup = c('', 'Volumen', '', 'Rectitud', 'Cal. Ramas', 'Bifurcación','I. Svive.'),
+  n.cgroup=c(1,1,3,2,2,2,1),
+  booktabs = TRUE,
+  colnamesTexCmd="bfseries",
+  lines.page=4000,
+  cdec=c(0,4,0,0,0,3,0,3,0,3,0,0),
+  longtable = TRUE,
+  colheads = c('Madre', 'VGA', 'Rank', 'Pctl','N','VGA','Pctl','VGA','Pctl','VGA','Pctl','Pctl'),
+  rowname="",
+  col.just=c("@{}c@{}","@{}c@{}","@{}c","@{}c","@{}c","@{}r@{}","@{}r","@{}r","@{}r","@{}r","@{}r","@{}c")
+  )
+@
+
+\end{document}
